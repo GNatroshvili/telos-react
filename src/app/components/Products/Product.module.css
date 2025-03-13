@@ -1,0 +1,181 @@
+.container {
+    max-width: 1120px;
+    margin: auto;
+  }
+  
+  @media only screen and (max-width: 1168px) {
+    .container {
+      padding-inline: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 1120px) {
+      .container {
+        padding-inline: 16px;
+      }
+    }
+
+.productsSection {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  
+  .stepperWrapper {
+    display: flex;
+    gap: 32px;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .stepperWrapper {
+      white-space: nowrap;
+      overflow: scroll;
+      width: 100vw;
+      scrollbar-width: none;
+      margin-left: -16px;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .firstStep {
+      margin-left: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .lastStep {
+      margin-right: 16px;
+    }
+  }
+  
+  .stepperWrapper p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+  }
+  
+  .productsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .productsWrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .productCard {
+    background-color: #f6f6f6;
+    border-radius: 9px;
+    padding: 24px 16px;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .productCard {
+      padding: 24px 12px;
+    }
+  }
+  
+  .heartWrapper {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  
+  .productCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .productCardContent img {
+    padding-top: 16px;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .productCardContent img {
+      width: 104px;
+      padding-top: 8px;
+    }
+  }
+  
+  .productCardContent p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 236px;
+    margin-top: 16px;
+    height: 48px;
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .productCardContent p {
+      margin-top: 8px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .productCardContent p {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 139.5px;
+    }
+  }
+  
+  .productCardContent h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 16px;
+    color: #000000;
+  }
+  
+  .productCardContent button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 12px 52px;
+    border-radius: 8px;
+    margin-top: 24px;
+    border: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .productCardContent button:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .productCardContent button {
+      margin-top: 16px;
+      padding: 12px 27.75px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .productCardContent button {
+      padding: 12px 19px;
+    }
+  }
+  
+  .discountsSection {
+    padding: 80px 0 80px 0;
+  }
+  
+  .discountsSectionTitleWrapper p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
