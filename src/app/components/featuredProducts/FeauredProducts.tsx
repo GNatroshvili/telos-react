@@ -97,62 +97,103 @@ const FeauredProducts = () => {
         </div>
       </section>
       <section className={styles.featuredProductsSectionMobile}>
-  <div className={styles.featureProductCardAirpodsCardMobile}>
-    <img
-      className={styles.airpodsImgMobile}
-      src="./assets/Airpods-img-mobile.png"
-      alt="Airpods"
-    />
-    <h3 className={styles.featureProductCardTitleAirpodsCardMobileTitle}>
-      Apple AirPods <span>Max</span>
-    </h3>
-    <p className={styles.featureCardDescriptionMarginTop8px}>
-      Computational audio. Listen, it's powerful
-    </p>
-  </div>
-  <div className={styles.featureProductCardVisionProCardMobile}>
-    <img
-      className={styles.visionProImgMobile}
-      src="./assets/Vision-img-mobile.png"
-      alt="Vision-Pro"
-    />
-    <h3 className={styles.featureProductCardTitleVisionProMobileTitle}>
-      Apple Vision <span>Pro</span>
-    </h3>
-    <p className={styles.featureCardDescriptionMarginTop8px}>
-      An immersive way to experience entertainment
-    </p>
-  </div>
-  <div className={styles.featureProductCardPs5CardMobile}>
-    <img
-      className={styles.ps5ImgMobile}
-      src="./assets/Ps5-img-mobile.png"
-      alt="Ps5"
-    />
-    <h3 className={styles.featureProductCardTitlePs5MobileTitle}>
-      Playstation <span>5</span>
-    </h3>
-    <p className={styles.featureCardDescriptionMarginTop8px}>
-      Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will
-      redefine your PlayStation experience.
-    </p>
-  </div>
-  <div className={styles.featureProductCardMacbookCardMobile}>
-    <img
-      className={styles.macbookImgMobile}
-      src="assets/Macbook-img-mobile.png"
-      alt="Macbook-Pro"
-    />
-    <h3 className={styles.featureProductCardTitleMacbookMobileTitle}>
-      <span>Macbook</span> Air
-    </h3>
-    <p className={styles.featureCardDescriptionMarginTop16px} id="bottom-margin-none">
-      The new 15‑inch MacBook Air makes room for more of what you love
-      with a spacious Liquid Retina display.
-    </p>
-    <button className={styles.blackBtnLargeMobile}>Shop Now</button>
-  </div>
-</section>
+        <div
+          className={clsx(styles.featureProductCard, styles.airpodsCardMobile)}
+        >
+          <img
+            className={styles.airpodsImgMobile}
+            src="./Airpods-img-mobile.png"
+            alt="Airpods"
+          />
+          <h3
+            className={clsx(
+              styles.featureProductCardTitle,
+              styles.airpodsCardMobileTitle
+            )}
+          >
+            Apple AirPods <span>Max</span>
+          </h3>
+          <p
+            className={clsx(styles.featureCardDescription, styles.marginTop8px)}
+          >
+            Computational audio. Listen, it's powerful
+          </p>
+        </div>
+        <div
+          className={clsx(
+            styles.featureProductCard,
+            styles.visionProCardMobile
+          )}
+        >
+          <img
+            className={styles.visionProImgMobile}
+            src="./Vision-img-mobile.png"
+            alt="Vision-Pro"
+          />
+          <h3
+            className={clsx(
+              styles.featureProductCardTitle,
+              styles.visionProMobileTitle
+            )}
+          >
+            Apple Vision <span>Pro</span>
+          </h3>
+          <p
+            className={clsx(styles.featureCardDescription, styles.marginTop8px)}
+          >
+            An immersive way to experience entertainment
+          </p>
+        </div>
+        <div className={clsx(styles.featureProductCard, styles.ps5CardMobile)}>
+          <img
+            className={styles.ps5ImgMobile}
+            src="./Ps5-img-mobile.png"
+            alt="Ps5"
+          />
+          <h3
+            className={clsx(
+              styles.featureProductCardTitle,
+              styles.ps5MobileTitle
+            )}
+          >
+            Playstation <span>5</span>
+          </h3>
+          <p
+            className={clsx(styles.featureCardDescription, styles.marginTop8px)}
+          >
+            Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will
+            redefine your PlayStation experience.
+          </p>
+        </div>
+        <div
+          className={clsx(styles.featureProductCard, styles.macbookCardMobile)}
+        >
+          <img
+            className={styles.macbookImgMobile}
+            src="./Macbook-img-mobile.png"
+            alt="Macbook-Pro"
+          />
+          <h3
+            className={clsx(
+              styles.featureProductCardTitle,
+              styles.macbookMobileTitle
+            )}
+          >
+            <span>Macbook</span> Air
+          </h3>
+          <p
+            className={clsx(
+              styles.featureCardDescription,
+              styles.marginTop16px
+            )}
+            id="bottom-margin-none"
+          >
+            The new 15‑inch MacBook Air makes room for more of what you love
+            with a spacious Liquid Retina display.
+          </p>
+          <button className={styles.blackBtnLargeMobile}>Shop Now</button>
+        </div>
+      </section>
     </>
   );
 };

@@ -225,6 +225,7 @@
   font-weight: 100;
   font-size: 64px;
   line-height: 56px;
+  color: #000000;
 }
 
 .rightSideProductsContent span {
@@ -269,9 +270,6 @@
   background-color: #000000;
   color: #ededed;
 }
-
-
-
 
 .featuredProductsSectionMobile {
     display: none;
@@ -345,6 +343,7 @@
     font-size: 34px;
     line-height: 40px;
     margin-top: 24px;
+    color: #000000;
   }
   
   .featureProductCardTitle span {

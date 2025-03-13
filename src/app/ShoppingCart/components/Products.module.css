@@ -1,0 +1,342 @@
+.container {
+    max-width: 1120px;
+    margin: auto;
+  }
+  
+  @media only screen and (max-width: 1168px) {
+    .container {
+      padding-inline: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .container {
+      padding-inline: 16px;
+    }
+  }
+  
+.dividerLine {
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100%;
+  }
+  
+  .productDivider {
+    height: 0.5px;
+    background-color: #ebebeb;
+    width: 100%;
+    margin-top: 32px;
+  }
+  
+  .shoppingCartSection {
+    padding: 112px 0;
+    display: flex;
+    gap: 48px;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .shoppingCartSection {
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px 16px;
+    }
+  }
+  
+  .sectionTitle h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  .productImg {
+    width: 90px;
+    padding-right: 15px;
+  }
+  
+  .productContent {
+    display: flex;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .productContent {
+      flex-direction: column;
+    }
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .productSecondLine {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .productSecondLine {
+      gap: 4px;
+    }
+  }
+  
+  .productInfo h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 193px;
+    color: #000000;
+  }
+  
+  .productInfo p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000
+  }
+  
+  .productQuantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .productQuantity button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    width: 24px;
+  }
+  
+  .productQuantity input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #EFEFEF4D;
+    color: #000000;
+  }
+  
+  .productPrice {
+    min-width: 105px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+  }
+  
+  .orderSummaryWrapper {
+    height: fit-content;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    padding: 56px 64px;
+    position: sticky;
+    top: 112px;
+  }
+  
+  @media only screen and (max-width: 1168px) {
+    .orderSummaryWrapper {
+      padding: 56px 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .orderSummaryWrapper {
+      padding: 56px 16px;
+      position: static;
+    }
+  }
+  
+  .orderSummary h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    color: #111111;
+    padding-bottom: 40px;
+  }
+  
+  .inputLabel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #545454;
+  }
+  
+  .paddingTop24px {
+    padding-top: 24px;
+  }
+  
+  .orderInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    min-width: 374.4px;
+    margin-top: 8px;
+    border: 0.5px solid #ebebeb;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    outline: none;
+    caret-color: #000000;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .orderInput {
+      min-width: 0;
+    }
+  }
+  
+  .orderInput input {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    caret-color: #000000;
+  }
+  
+  .orderInput button {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    padding: 8px;
+    background: transparent;
+    border-radius: 6px;
+    border: 1px solid black;
+    width: 76.45px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .orderInput button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .inputBorder {
+    border: 0.5px solid #ebebeb;
+    padding: 16px;
+    min-width: 374.4px;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .inputBorder {
+      min-width: 0;
+    }
+  }
+  
+  .totalWrapper {
+    margin-top: 24px;
+  }
+  
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .blackStyleLarge {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+  }
+  
+  .blackStyleMedium {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  
+  .grayStyleLarge {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #545454;
+  }
+  
+  .tax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .shipping {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .checkoutBtn {
+    min-width: 408px;
+    padding: 16px 0;
+    margin-top: 48px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .checkoutBtn:hover {
+    background-color: #f5f5f5;
+    color: #000000;
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .checkoutBtn {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+  
+  .emptyCartWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  
+  .emptyCardTitle {
+    min-width: 280px;
+    margin-top: 48px;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  
+  .emptyLogo {
+    width: 100%;
+    margin-top: 48px;
+  }
