@@ -2,9 +2,6 @@ import clsx from "clsx";
 import React from "react";
 import styles from "./Header.module.css";
 
-import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] });
-
 const Header = () => {
   return (
     <body className={styles.body}>

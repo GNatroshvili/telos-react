@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./FeaturedProducts.module.css";
 import clsx from "clsx";
 
-const FeauredProducts = () => {
+const FeaturedProducts = () => {
   return (
     <>
       <section className={styles.featuredProductsSection}>
@@ -198,4 +198,4 @@ const FeauredProducts = () => {
   );
 };
 
-export default FeauredProducts;
+export default FeaturedProducts;

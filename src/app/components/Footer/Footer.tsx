@@ -2,13 +2,10 @@ import clsx from "clsx";
 import React from "react";
 import styles from "./Footer.module.css";
 
-import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] });
-
 const Footer = () => {
   return (
     <body className={styles.body}>
-      <footer className={clsx(styles.footer, inter.className)}>
+      <footer className={styles.footer}>
         <div className={clsx(styles.footerWrapper, styles.container)}>
           <div className={styles.descriptionWrapper}>
             <img src="./White-Logo.svg" alt="logo" />
