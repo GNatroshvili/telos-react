@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const Footer = () => {
   return (
-    <body>
+    <body className={styles.body}>
       <footer className={clsx(styles.footer, inter.className)}>
         <div className={clsx(styles.footerWrapper, styles.container)}>
           <div className={styles.descriptionWrapper}>

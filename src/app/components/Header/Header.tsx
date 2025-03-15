@@ -7,16 +7,16 @@ const inter = Inter({ subsets: ['latin'] });
 
 const Header = () => {
   return (
-    <body>
+    <body className={styles.body}>
       <header className={clsx(styles.header, styles.container)}>
         <figure className={styles.logoWrapper}>
           <a href="./index.html">
-            <img src="/Logo.svg" alt="cyber-logo" /> 
+            <img src="/Logo.svg" alt="cyber-logo" />
           </a>
         </figure>
         <div className={styles.searchWrapper}>
           <img
-            src="/Search.svg" 
+            src="/Search.svg"
             alt="search"
             className={styles.searchIcon}
           />
@@ -31,11 +31,11 @@ const Header = () => {
           </ul>
         </div>
         <figure className={styles.actionsWrapper}>
-          <img src="/Favorites.svg" alt="favorites" /> 
+          <img src="/Favorites.svg" alt="favorites" />
           <a href="./shopping-cart.html" className={styles.shoppingCartBtn}>
-            <img src="/Cart.svg" alt="cart" /> 
+            <img src="/Cart.svg" alt="cart" />
           </a>
-          <img src="/User.svg" alt="user" /> 
+          <img src="/User.svg" alt="user" />
         </figure>
         <div className={styles.burgerMenu}>
           <span />
