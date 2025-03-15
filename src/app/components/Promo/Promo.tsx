@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Promo.module.css";
-import clsx from "clsx"; 
 
 const Promo = () => {
   return (
