@@ -6,12 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="cc4c2e34-811c-4fdd-b94d-feae865b8f93" name="Changes" comment="Delete unused lines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ShoppingCart/components/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ShoppingCart/components/Products.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/ShoppingCart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ShoppingCart/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/CategorySection/CategorySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/CategorySection/CategorySection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Discounts/Discounts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Discounts/Discounts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/FeaturedProducts/FeaturedProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/FeaturedProducts/FeaturedProducts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/featuredProducts/FeaturedProducts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/FeaturedProducts/FeaturedProducts.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/featuredProducts/FeauredProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/FeaturedProducts/FeaturedProducts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Products/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Products/Products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Promo/Promo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Promo/Promo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +70,8 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17161459" />
-      <window_info id="Commit" order="1" weight="0.23776042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1497396" />
+      <window_info id="Commit" order="1" weight="0.17161459" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -75,9 +80,9 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.32994187" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.029554263" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.39486435" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32994187" />
-      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.029554263" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.029554263" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -129,6 +134,7 @@
       <workItem from="1742028855673" duration="1249000" />
       <workItem from="1742030478261" duration="1354000" />
       <workItem from="1742032916433" duration="442000" />
+      <workItem from="1742154307435" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Fix className bug in Footer, Header and Page.module.css, Delete unused file.">
       <option name="closed" value="true" />

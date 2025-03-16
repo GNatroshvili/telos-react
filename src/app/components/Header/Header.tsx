@@ -1,15 +1,18 @@
+"use client";
+
 import clsx from "clsx";
 import React from "react";
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <body className={styles.body}>
+    <div className={styles.body}>
       <header className={clsx(styles.header, styles.container)}>
         <figure className={styles.logoWrapper}>
-          <a href="./index.html">
-            <img src="/Logo.svg" alt="cyber-logo" />
-          </a>
+          <Link href="/">
+            <img src="/Logo.svg" alt="cyber-logo"/>
+          </Link>
         </figure>
         <div className={styles.searchWrapper}>
           <img
@@ -29,9 +32,9 @@ const Header = () => {
         </div>
         <figure className={styles.actionsWrapper}>
           <img src="/Favorites.svg" alt="favorites" />
-          <a href="./shopping-cart.html" className={styles.shoppingCartBtn}>
+          <Link href="/ShoppingCart">
             <img src="/Cart.svg" alt="cart" />
-          </a>
+          </Link>
           <img src="/User.svg" alt="user" />
         </figure>
         <div className={styles.burgerMenu}>
@@ -40,7 +43,7 @@ const Header = () => {
           <span />
         </div>
       </header>
-    </body>
+    </div>
   );
 };
 

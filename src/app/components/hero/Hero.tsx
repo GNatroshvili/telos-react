@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 import styles from "./Hero.module.css";
 import clsx from "clsx";
 
 const Hero = () => {
   return (
-    <body className={styles.body}>
+    <div className={styles.body}>
       <section className={styles.heroSection}>
         <div className={clsx(styles.heroSectionWrapper, styles.container)}>
           <div className={styles.heroContentWrapper}>
@@ -28,7 +30,7 @@ const Hero = () => {
           </figure>
         </div>
       </section>
-    </body>
+    </div>
   );
 };
 

@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import styles from "./Discounts.module.css";
-import clsx from "clsx"; 
+import clsx from "clsx";
 
 const Discounts = () => {
   return (

@@ -1,10 +1,12 @@
+"use client";
+
 import clsx from "clsx";
 import React from "react";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <body className={styles.body}>
+    <div className={styles.body}>
       <footer className={styles.footer}>
         <div className={clsx(styles.footerWrapper, styles.container)}>
           <div className={styles.descriptionWrapper}>
@@ -44,7 +46,7 @@ const Footer = () => {
           <img src="./Instagram.svg" alt="instagram-logo" />
         </div>
       </footer>
-    </body>
+    </div>
   );
 };
 

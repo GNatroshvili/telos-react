@@ -1,4 +1,5 @@
-import styles from "./page.module.css";
+"use client";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/hero/Hero";
