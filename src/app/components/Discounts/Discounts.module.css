@@ -191,11 +191,10 @@
 }
 
 @media only screen and (max-width: 1120px) {
-    .discountsSection {
-      padding: 80px 16px 80px 16px;
-    }
+  .discountsSection {
+    padding: 80px 16px 80px 16px;
   }
-
+}
 
 .discountsSectionTitleWrapper p {
   font-weight: 500;
