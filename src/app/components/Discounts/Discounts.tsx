@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./Discounts.module.css";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
+import { handleCartAction } from '../../utils/handleAddToCart'
 
 const Discounts = () => {
   const [data, setData] = useState([]);
@@ -37,7 +38,9 @@ const Discounts = () => {
                 <img src={item.image} alt={item.name} />
                 <p>{item.name}</p>
                 <h3>${item.price}</h3>
-                <button>Add To Cart</button>
+                <button onClick={() => handleCartAction(item, "add")}>
+                  Add To Cart
+                </button>
               </div>
             </div>
           </div>

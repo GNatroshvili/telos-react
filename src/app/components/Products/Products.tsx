@@ -4,6 +4,10 @@ import React from "react";
 import styles from "./Product.module.css";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
+import { Product } from '../../types/types'
+import { handleCartAction } from '../../utils/handleAddToCart'
+
+type Props = {}
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -29,7 +33,7 @@ const Products = () => {
         <p className={styles.lastStep}>Featured Products</p>
       </div>
       <div className={styles.productsWrapper}>
-        {data.map((item: any) => (
+        {data.map((item: Product) => (
           <div key={item.id} className={styles.productCardContent}>
             <div className={styles.productCard}>
               <div className={styles.heartWrapper}>
@@ -39,7 +43,9 @@ const Products = () => {
                 <img src={item.image} alt={item.name} />
                 <p>{item.name}</p>
                 <h3>${item.price}</h3>
-                <button>Add To Cart</button>
+                <button onClick={() => handleCartAction(item, 'add')}>
+                  Add To Cart
+                </button>
               </div>
             </div>
           </div>
