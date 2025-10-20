@@ -15,6 +15,10 @@ import { Product, ProductWithQuantity } from '../types/types'
      } else {
        cart.push({ ...product, quantity: 1 })
      }
+    try {
+      const evt = new CustomEvent('cart:add', { detail: { id: product.id, name: product.name } })
+      window.dispatchEvent(evt)
+    } catch {}
    } else if (action === 'remove') {
      if (existingProductIndex !== -1) {
        if (cart[existingProductIndex].quantity > 1) {

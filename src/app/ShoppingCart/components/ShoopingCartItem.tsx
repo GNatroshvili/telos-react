@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import styles from "./Products.module.css";
-import clsx from "clsx";
+// import clsx from "clsx";
 
 import { ProductWithQuantity } from "../../types/types";
 import { handleCartAction } from "../../utils/handleAddToCart";
@@ -19,6 +19,7 @@ const ShoppingCartItem = ({ product, handleUpdatePage }: Props) => {
   return (
     <>
       <div className={styles.product}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className={styles.productImg}
           src={product.image}
@@ -40,7 +41,12 @@ const ShoppingCartItem = ({ product, handleUpdatePage }: Props) => {
               >
                 −
               </button>
-              <input type="text" defaultValue={1} value={product.quantity} />
+              <input
+                type="text"
+                value={product.quantity}
+                readOnly
+                aria-label="Product quantity"
+              />
               <button
                 className={styles.increase}
                 onClick={() => {
@@ -54,6 +60,7 @@ const ShoppingCartItem = ({ product, handleUpdatePage }: Props) => {
             <p className={styles.productPrice}>
               ${product.price * product.quantity}
             </p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className={styles.deleteButton}
               src="./Delete-Button.svg"
