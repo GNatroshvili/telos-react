@@ -36,7 +36,13 @@ export default function CartToast({ autoHideMs = 3000 }: Props) {
 
   return (
     <div className={styles.toast} role="status" aria-live="polite">
-      <span className={styles.message}>✅ {message}</span>
+      <div className={styles.iconWrapper}>
+        <span className={styles.icon}>✓</span>
+      </div>
+      <div className={styles.content}>
+        <div className={styles.title}>Success!</div>
+        <div className={styles.message}>{message}</div>
+      </div>
       <button
         className={styles.closeBtn}
         aria-label="Close notification"
